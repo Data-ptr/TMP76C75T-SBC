@@ -56,8 +56,8 @@ $Comp
 L Jane~Hacker:TMP76C75T U1
 U 1 1 61BDC390
 P 4600 4950
-F 0 "U1" H 5744 4946 50  0000 L CNN
-F 1 "TMP76C75T" H 5600 5750 50  0000 L CNN
+F 0 "U1" H 5744 4946 50  0000 C CNN
+F 1 "TMP76C75T" H 4600 4750 50  0000 C CNN
 F 2 "Package_LCC:PLCC-68_THT-Socket" H 4600 4950 50  0001 C CNN
 F 3 "" H 4600 4950 50  0001 C CNN
 	1    4600 4950
@@ -700,13 +700,13 @@ RW
 $Comp
 L Connector:Conn_01x08_Male J1
 U 1 1 62BEFC75
-P 1900 5400
-F 0 "J1" H 1872 5282 50  0000 R CNN
-F 1 "Conn_01x08_Male" H 1872 5373 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 1900 5400 50  0001 C CNN
-F 3 "~" H 1900 5400 50  0001 C CNN
-	1    1900 5400
-	1    0    0    1   
+P 1900 5300
+F 0 "J1" H 2050 5700 50  0000 R CNN
+F 1 "Conn_01x08_Male" V 1850 5600 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 1900 5300 50  0001 C CNN
+F 3 "~" H 1900 5300 50  0001 C CNN
+	1    1900 5300
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Jack-DC J-PWR1
@@ -722,13 +722,13 @@ $EndComp
 $Comp
 L Connector:Conn_01x08_Male J7
 U 1 1 62CD1C2A
-P 4850 7700
-F 0 "J7" V 5000 8100 50  0000 R CNN
-F 1 "Conn_01x08_Male" V 4800 8000 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 4850 7700 50  0001 C CNN
-F 3 "~" H 4850 7700 50  0001 C CNN
-	1    4850 7700
-	0    1    -1   0   
+P 4750 7700
+F 0 "J7" V 4900 8150 50  0000 R CNN
+F 1 "Conn_01x08_Male" V 4700 8000 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 4750 7700 50  0001 C CNN
+F 3 "~" H 4750 7700 50  0001 C CNN
+	1    4750 7700
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector:Conn_01x08_Male J5
@@ -794,7 +794,7 @@ $Comp
 L Connector:Conn_01x06_Male J6
 U 1 1 6341A6B6
 P 3900 7700
-F 0 "J6" V 4050 7400 50  0000 R CNN
+F 0 "J6" V 4050 8050 50  0000 R CNN
 F 1 "Conn_01x06_Male" V 3850 8000 50  0000 R CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 3900 7700 50  0001 C CNN
 F 3 "~" H 3900 7700 50  0001 C CNN
@@ -815,8 +815,8 @@ $Comp
 L Connector:Conn_01x07_Male J2
 U 1 1 636AA39F
 P 3150 4500
-F 0 "J2" H 3100 4550 50  0000 C CNN
-F 1 "Conn_01x07_Male" H 2800 4450 50  0000 C CNN
+F 0 "J2" H 3250 4900 50  0000 C CNN
+F 1 "Conn_01x07_Male" V 3100 4500 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical" H 3150 4500 50  0001 C CNN
 F 3 "~" H 3150 4500 50  0001 C CNN
 	1    3150 4500
@@ -1647,8 +1647,6 @@ Wire Wire Line
 Wire Wire Line
 	8200 3550 8200 4500
 Wire Wire Line
-	8200 4500 9200 4500
-Wire Wire Line
 	8250 3500 8250 4600
 Wire Wire Line
 	8250 4600 9200 4600
@@ -2357,15 +2355,13 @@ Wire Wire Line
 Wire Wire Line
 	4550 7500 4550 7350
 Wire Wire Line
-	4650 7500 4650 7350
+	4650 7500 4650 7400
 Wire Wire Line
 	4750 7500 4750 7350
 Wire Wire Line
 	4850 7500 4850 7350
 Wire Wire Line
 	4950 7500 4950 7350
-Wire Wire Line
-	5050 7500 5050 7350
 Wire Wire Line
 	5150 7500 5150 7350
 Entry Wire Line
@@ -2401,8 +2397,6 @@ Wire Wire Line
 Wire Wire Line
 	2450 5700 2450 7200
 Connection ~ 5300 7200
-Wire Wire Line
-	5300 6200 5300 6300
 Wire Wire Line
 	6200 5300 6200 7200
 Entry Wire Line
@@ -2504,23 +2498,18 @@ PORT6
 $Comp
 L Device:C_Small C13
 U 1 1 66588547
-P 5400 6300
-F 0 "C13" V 5400 6100 50  0000 C CNN
-F 1 "C_Small" V 5400 6600 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 5400 6300 50  0001 C CNN
-F 3 "~" H 5400 6300 50  0001 C CNN
-	1    5400 6300
+P 5400 6350
+F 0 "C13" V 5400 6150 50  0000 C CNN
+F 1 "C_Small" V 5400 6650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5400 6350 50  0001 C CNN
+F 3 "~" H 5400 6350 50  0001 C CNN
+	1    5400 6350
 	0    1    1    0   
 $EndComp
-Connection ~ 5300 6300
-Wire Wire Line
-	5300 6300 5300 7200
 Wire Wire Line
 	5200 6200 5200 6250
 Wire Wire Line
 	5200 6250 5500 6250
-Wire Wire Line
-	5500 6250 5500 6300
 $Comp
 L Device:C_Small C14
 U 1 1 666072E3
@@ -2558,9 +2547,6 @@ Wire Wire Line
 	3300 5500 3500 5500
 Text Notes 10750 7650 2    50   ~ 0
 v0.5
-Connection ~ 4150 3800
-Wire Wire Line
-	4200 3800 4150 3800
 $Comp
 L Connector:Conn_01x08_Male J4-ADDR1
 U 1 1 66B8B76A
@@ -2639,6 +2625,23 @@ Text Label 3500 4500 2    50   ~ 0
 P2.1
 Text Label 3500 4600 2    50   ~ 0
 P2.2
+Wire Wire Line
+	9200 4500 8200 4500
+Text Label 9000 4500 0    50   ~ 0
+CE
+Text Label 9000 4600 0    50   ~ 0
+OE
+Wire Wire Line
+	5300 6350 5300 7200
+Wire Wire Line
+	5300 6200 5300 6350
+Connection ~ 5300 6350
+Wire Wire Line
+	5500 6250 5500 6350
+Text Label 5500 6250 0    50   ~ 0
+AN-
+Wire Wire Line
+	5050 7350 5050 7500
 Wire Wire Line
 	7850 4100 9200 4100
 Wire Wire Line
