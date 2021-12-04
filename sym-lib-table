@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "Jane Hacker")(type Legacy)(uri "${KIPRJMOD}/Jane Hacker.lib")(options "")(descr ""))
+  (lib (name TMP76C75T-rescue)(type Legacy)(uri ${KIPRJMOD}/TMP76C75T-rescue.lib)(options "")(descr ""))
+)
